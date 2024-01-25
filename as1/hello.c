@@ -66,32 +66,6 @@ int main() {
     printf("Testing the joystick. Press CTRL+C to exit.\n");
 
     // Infinite loop to continuously read the joystick state
-    while (1) {
-        int direction = readJoystick();
-        switch (direction) {
-            case JOYSTICK_UP:
-                printf("Up\n");
-                break;
-            case JOYSTICK_DOWN:
-                printf("Down\n");
-                break;
-            case JOYSTICK_LEFT:
-                printf("Left\n");
-                break;
-            case JOYSTICK_RIGHT:
-                printf("Right\n");
-                break;
-            case JOYSTICK_CENTER:
-                printf("Center\n");
-                break;
-            case JOYSTICK_NONE:
-                // printf("No input\n"); // Uncomment if you want to see the "no input" state
-                break;
-            default:
-                printf("Unknown\n");
-        }
-        sleep(1); // Delay a bit before reading again
-    }
     return 0;
 }
 
